@@ -1,0 +1,54 @@
+<html>
+
+  <head>
+    <title> Angular JS App </title>
+
+    <!-- CSS files -->
+    <link href="css\leaflet.css" rel="stylesheet" />
+    <link href="https://s3.amazonaws.com/codecademy-content/projects/bootstrap.min.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+
+
+    <!-- Angular and external files -->
+    <script src="js\vendor\angular.min.js"></script>
+    <script src='js\vendor\helpers.js'></script>
+    <script src='js\vendor\leaflet.js'></script>
+    <script src="https://code.angularjs.org/1.2.28/angular-route.min.js"></script>
+    <script src= "https://cdn.zingchart.com/zingchart.min.js"></script>
+		<script> zingchart.MODULESDIR = "https://cdn.zingchart.com/modules/";
+		ZC.LICENSE = ["569d52cefae586f634c54f86dc99e6a9","ee6b7db5b51705a13dc2339db3edaf6d"];</script>
+    <script src='js\vendor\chart.js'></script>
+
+  </head>
+  <body ng-app='NYC_Schools_App'>
+    <div class="header">
+
+        <div class="topnav">
+
+
+          <a href="/#/">NYC HIGH SCHOOLS DIRECTORY</a>
+          <a href="/#about">ABOUT</a>
+
+              </div>
+      </div>
+      <div ng-view></div>
+
+
+    <!-- Modules -->
+    <script src='js\app.js'></script>
+
+    <!-- Directives -->
+    <script src='js\directives\angular-leaflet-directive.min.js'></script>
+
+    <!-- Services -->
+    <script src='js\services\get_json.js'></script>
+
+    <!-- Controllers -->
+    <script src='js\controllers\MainController.js'></script>
+    <script src='js\controllers\SchoolController.js'></script>
+
+  </body>
+
+
+</html>

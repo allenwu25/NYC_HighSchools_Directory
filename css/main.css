@@ -1,0 +1,347 @@
+html, body, #map_canvas {
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.ang_logo{
+  float:right;
+  padding-right:10px;
+  height:9%;
+}
+.title{
+  font-family:
+}
+.header {
+  background-color: rgba(0,0,0,1);
+  position: fixed;
+  width: 100%;
+  padding: 0px -10px 0px 0px;
+
+  z-index: 10;
+  line-height: 37px;
+}
+
+
+.header h1 {
+  color: #fff;
+  font-size: 16px;
+  letter-spacing: 1.2px;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.header a {
+  padding-right: 20px;
+  color: #fff;
+}
+
+.container-fluid {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.selection{
+  background-color:white;
+  width:40%;
+  padding-left: 0;
+  padding-right: 0;
+  z-index: 10000;
+  float:right;
+}
+
+#map_canvas {
+  position: relative;
+}
+
+.angular-leaflet-map {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+
+.about{
+  padding-top: 100px;
+  float: center;
+  font-size: 30px;
+  color: blue;
+}
+
+.about_title{
+  font-size: 50px;
+  color:black;
+
+}
+
+/* school view */
+
+.directory{
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  background-color:#4250f4;
+  padding:15px;
+  color:white;
+  opacity:1;
+}
+.directory:hover{
+  color:white;
+  text-decoration: none;
+  font-size:15px;
+}
+
+.each_school{
+  padding-bottom:0px;
+  float:center;
+  text-align: center;
+}
+
+.schoolname{
+  margin-top:-10px;
+  line-height:normal;
+  padding-left: 15%;
+  padding-right:15%;
+  font-size: 50px;
+  color:black;
+}
+
+.schooladdress{
+  font-size: 24px;
+  color:black;
+  text-transform: capitalize;
+}
+
+.contact{
+  font-size: 20px;
+  color:blue;
+  float: center;
+}
+.intro{
+  font-size:20px;
+  padding-left:20%;
+  padding-right: 20%;
+}
+
+.split {
+  height: 100%;
+  width: 50%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+
+
+/* Control the left side */
+.left {
+  left: 0;
+}
+
+/* Control the right side */
+.right {
+  right: 0;
+}
+
+/* If you want the content centered horizontally and vertically */
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+#help{
+  padding-left:20px;
+  padding-right:15px;
+  position:fixed;
+  font-size:15px;
+  top:0px;
+  height: 100%;
+  left:0px;
+  background-color:white;
+  width:25%;
+  z-index: 2;
+  border-right:1px solid black;
+}
+
+#menuoptions{
+  position:absolute;
+  top:0px;
+  height: 21300px;
+  right:0px;
+  background-color:white;
+  width:35%;
+  border-left: 1px solid black;
+  z-index: 2;
+}
+
+
+
+
+.mapleaf{
+  position:fixed;
+  top:220px;
+
+  height:100%;
+
+
+}
+
+.maintitle{
+  padding: 30px;
+  color:#000066;
+}
+
+.listitem{
+  color:#000066;
+  background-color:#eaf8f9;
+    border-top: 2px solid gray;
+  padding-left:30px;
+  padding-top:15px;
+  padding-bottom:15px;
+  font-size:20px;
+
+}
+.listitem:hover{
+  text-decoration:none;
+  font-size:20.5px;
+}
+
+.listitemlink:hover{
+  text-decoration:none;
+}
+
+#map{
+  z-index:100000;
+  margin-top:0px;
+
+}
+
+.leaflet-control-container {
+  position: fixed;
+  top:60px;
+  left:25%;
+}
+.order_btn{
+  margin-bottom:20px;
+  padding:10px;
+    width:50%;
+  color:white;
+  border: none;
+
+}
+.break{
+  padding:10px;
+}
+#order1{
+  float:left;
+  background-color: red;
+}
+#order2{
+  float:right;
+  background-color:blue;
+}
+
+.myButton {
+  background-color: #0250f4; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+.myButton:hover {
+  background-color: #0000f4;
+}
+
+.eduinfo{
+  float:left;
+}
+
+table, th, td {
+  border: 1px solid black;
+}
+
+.col1 {
+  padding:10px;
+  width:50%;
+}
+
+.result{
+  padding:10px;
+}
+
+
+#students_table{
+  font-size:22px;
+  margin-top:30px;
+  text-decoration: none;
+  margin-left: 22%;
+}
+
+/* Chart */
+
+
+#markerbutton{
+  padding-top:30px;
+  padding-bottom:0px;
+  height:25%;
+}
+
+#myChart {
+  padding-right:10%;
+  size:40%;
+  height:100%;
+  min-height:150px;
+  padding-bottom:0px;
+}
+.zc-ref {
+  display: none;
+}
+
+.topnav {
+  background-color: black;
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: #ddd;
+}
+
+/* About Page */
+
+
+.techimage{
+  height:25%;
+}
+.desc{
+  padding-left:10%;
+  padding-right:10%;
+  font-size:23px;
+
+}

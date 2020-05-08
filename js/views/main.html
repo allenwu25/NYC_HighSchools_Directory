@@ -1,0 +1,46 @@
+
+<div id="mapp">
+
+ </div>
+
+ <div id="help">
+   <br><br><br>
+   <h2>How to use this site:</h2>
+<br><br>
+   Welcome to NYC Schools, a web application
+   to help New York City residents find information
+   about secondary schools in the city.
+<br><br>
+   Each icon on the map represents a school, whose
+   respective information page can be visited by clicking
+   the icon and it's link.
+<br><br>
+   To the right, you can search and filter for individual schools.
+   Again, clicking on the school name will display the
+   school's information page.
+<br><br>
+   Thanks for Visiting!
+<br>
+   Allen
+<br><br>
+<a href='#/about'><button class='myButton'> Learn More </button></a>
+ </div>
+
+
+   <div id="mapleaf" style="z-index: 1;">
+         <leaflet center='mapCenter' markers='mapMarkers'></leaflet>
+      </div>
+      <div id='menuoptions'>
+        <br><br>
+        <h1 class='maintitle'>New York City Secondary Schools </h1>
+        <input type='text' placeholder=' Search for a School' style='margin-left: 30px; margin-bottom:30px; width: 75%;'ng-model='search' />
+        <button class='order_btn' id='order1' ng-click="order ='sat_avg'; reverse=true">Order by SAT avg</button>
+        <button class='order_btn' id='order2' ng-click="order ='school_name'; reverse=false">Order Alphabetically</button>
+        <div class='break'></div>
+        <div ng-repeat='data in geodata | orderBy: order : reverse | filter: search'>
+          <div class='listitem'>
+            <a class='listitemlink' style='color:#000066' href="#/schools/{{data.ind}}">
+            {{data.school_name}}</a>
+          </div>
+        </div>
+      </div>

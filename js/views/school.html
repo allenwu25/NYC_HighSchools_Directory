@@ -1,0 +1,47 @@
+
+<br><br>
+  <div class='each_school'>
+    <center>
+      <br><br><a href='/#/' class='directory'> &lt&lt Back to Directory </a><br>
+
+      <img id='markerbutton' src='http://www.gujaratibedind.org/img/map-marker.png'>
+      <br>
+      <h1 class='schoolname'>{{school.school_name}}</h1>
+    <h2 class='schooladdress'> {{school.address}}, NEW YORK NY</h2>
+    <div class="contact">
+      <p> ☎️ {{school.phone}}   |    📧 {{school.email}}</p>
+    </div>
+<br>
+    <h2> About Us: </h2>
+    <p class='intro'>{{school.description }}</p>
+
+
+    </center>
+
+
+    <div class="row">
+      <div class="col-xs-6">
+        <h2> Educational Information</h2>
+        <table id='students_table'>
+
+          <tr>
+
+            <th class='col1'> Number of Students 👨‍🎓 </th>
+            <th class='result'> {{school.num_students}} </th>
+          </tr>
+          <tr>
+            <th class='col1'> AP Courses 📚 </th>
+            <th class='result'> {{school.ap_courses}} </th>
+          </tr>
+          <tr>
+            <th class='col1'> Mean SAT Score ✅ </th>
+            <th class='result'> {{school.sat_avg}} </th>
+          <tr>
+        </table>
+      </div>
+      <div class="col-xs-6">
+        <h2> Mean SAT Score</h2>
+        <div id='myChart'><a class="zc-ref" href="https://www.zingchart.com/">Charts by ZingChart</a></div>
+      </div>
+      </div>
+  </div>
